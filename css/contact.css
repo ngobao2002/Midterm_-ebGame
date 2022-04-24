@@ -44,12 +44,14 @@ body{
 }
 
 .left{
-	background-color: #1b182b;
+	/* background-color: #1b182b; */
 	background-size: cover;
 	height: 100%;
+	background-image: url(../img/new1.jpg);
 }
 
 .right{
+	background-color: #1b182b;
 	padding: 25px 40px;
 }
 
