@@ -23,8 +23,6 @@ document.querySelector('#search-icon').onclick = () => {
     search.classList.toggle('active')
     
 }
-
-
 // Swiper
 var swiper = new Swiper(".trending-content", {
     slidesPerView: 1,
