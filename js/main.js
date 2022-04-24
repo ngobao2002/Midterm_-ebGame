@@ -4,7 +4,9 @@ let navbar = document.querySelector('.menu');
 menu.onclick = () => {
     navbar.classList.toggle('active');
     menu.classList.toggle('move');
-    bell.classList.remove('active')
+    bell.classList.remove('active');
+    search.classList.remove('active');
+    
 }
 
 // Notification
@@ -12,6 +14,14 @@ let bell = document.querySelector('.notification');
 
 document.querySelector('#bell-icon').onclick = () => {
     bell.classList.toggle('active')
+}
+
+// Search
+let search = document.querySelector('.search');
+
+document.querySelector('#search-icon').onclick = () => {
+    search.classList.toggle('active')
+    
 }
 
 
@@ -51,3 +61,27 @@ var swiper = new Swiper(".trending-content", {
     var scrolled = (winScroll / height) *100;
     document.getElementById('scroll-bar').style.width = scrolled + '%';
   }
+// Search
+  // var scene = new Scene({
+  //   ".searchbox": {
+  //     "0%" : "width: 50px",
+  //     "70%": "width: 300px",
+  //   },
+  //   ".line": {
+  //     "30%" : "width: 0%",
+  //     "100%": "width: 100%",
+  //   }
+  // }, {
+  //   duration: 1,
+  //   easing: Scene.EASE_IN_OUT,
+  //   selector: true,
+  // }).exportCSS();
+  
+  // scene.setTime(0);
+  // var toggle = false;
+  
+  // document.querySelector(".submit").addEventListener("click", function() {
+  //   toggle = !toggle;
+  //   scene.setDirection(toggle ? "normal" : "reverse");
+  //   scene.play();
+  // });
